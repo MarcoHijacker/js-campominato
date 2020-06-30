@@ -34,7 +34,7 @@ alert("Benvenuto a Campo Minato! Ho appena piazzato 16 mine su 16 numeri random 
 while(arrayUser.length < 84 && isAbsent(arrayMine, numUser)) { // Anche l'improbabile caso di vittoria arresterebbe il while
   numUser = parseInt(prompt("Inserisci un numero da 1 a 100: "));
   if(numUser < 1 || numUser > 100) { // Controllo di fair play!
-    alert("Cosa non ti è chiaro di \'numero DA 1 A 100\'?");
+    alert("Cosa non ti è chiaro di \'NUMERO DA 1 A 100\'?");
   } else if(isAbsent(arrayUser, numUser) && isAbsent(arrayMine, numUser)) { // Condizione (la più stringente) di vittoria
     arrayUser.push(numUser);
     score++;
